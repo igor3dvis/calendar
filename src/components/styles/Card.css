@@ -1,0 +1,13 @@
+.card {
+  min-width: 30%;
+  min-height: 50px;
+  background-color: rgb(245, 245, 245);
+  margin: 8px;
+  border-radius: 6px;
+  padding: 4px 6px;
+  box-shadow: 5px 5px 5px rgba(75, 74, 74, 0.25);
+
+}
+.card__text {
+  font-size: 0.87em;
+}
