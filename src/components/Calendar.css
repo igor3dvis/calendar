@@ -1,0 +1,41 @@
+.calendar{
+max-width: 16em;
+margin: 0 auto;
+border: 1px solid rgb(153, 175, 177);
+border-radius: 4px;
+box-shadow: 5px 5px 5px rgba(75, 74, 74, 0.25);
+}
+
+.week-wrapper {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 4px;
+  padding: 5px;
+  background-color: rgb(126, 143, 146);
+}
+.month-wrapper {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 4px;
+  padding: 5px;
+  background-color: rgb(153, 175, 177);
+}
+.month {
+  padding: 5px 0;
+  text-align: center;
+  font-weight: 600;
+}
+
+.day {
+  padding: 5px 0;
+  text-align: center;
+  font-weight: 600;
+  background-color: rgb(240, 230, 240);
+  border-radius: 3px;
+}
+
+.today {
+  background-color: rgb(246, 246, 250);
+  color:rgb(116, 116, 151);
+  font-weight: 700;
+}
