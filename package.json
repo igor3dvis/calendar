@@ -1,5 +1,5 @@
 {
-  "name": "hw01-react-modals",
+  "name": "calendar-component",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -12,12 +12,10 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "dev": "concurrently \"npm run server\"  \"npm start\"",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "server": "json-server -w server/db.json -p 3001"
   },
   "eslintConfig": {
     "extends": [
