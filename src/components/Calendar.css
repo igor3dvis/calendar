@@ -1,41 +1,74 @@
-.calendar{
-max-width: 16em;
-margin: 0 auto;
-border: 1px solid rgb(153, 175, 177);
-border-radius: 4px;
-box-shadow: 5px 5px 5px rgba(75, 74, 74, 0.25);
-}
-
-.week-wrapper {
-  display: grid;
-  grid-template-columns: repeat(7, 1fr);
-  gap: 4px;
-  padding: 5px;
-  background-color: rgb(126, 143, 146);
-}
-.month-wrapper {
-  display: grid;
-  grid-template-columns: repeat(7, 1fr);
-  gap: 4px;
-  padding: 5px;
-  background-color: rgb(153, 175, 177);
-}
-.month {
-  padding: 5px 0;
-  text-align: center;
-  font-weight: 600;
-}
-
-.day {
-  padding: 5px 0;
-  text-align: center;
-  font-weight: 600;
-  background-color: rgb(240, 230, 240);
-  border-radius: 3px;
-}
-
-.today {
-  background-color: rgb(246, 246, 250);
-  color:rgb(116, 116, 151);
-  font-weight: 700;
-}
+.calendar-wrapper {
+    max-width: 17em;
+    margin: 1em auto;
+    text-align: center;
+    user-select: none;
+    border: 1px solid rgb(210, 210, 210); 
+    box-shadow: 5px 5px 5px rgba(75, 75, 75, 0.25);
+  }
+  
+  .calendar {
+    max-width: 16em;
+    margin: .4em auto;
+    border: 1px solid rgb(210, 210, 210); 
+    
+    /* box-shadow: 5px 5px 5px rgba(75, 75, 75, 0.25); */
+  }
+  
+  .week-wrapper,
+  .month-wrapper {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 2px;
+    padding: 5px;
+  }
+  
+  .week-wrapper {
+    background-color: rgb(255, 255, 255);
+  }
+  
+  .month-wrapper {
+    background-color: rgb(255, 255, 255);
+    
+    
+  }
+  
+  .month {
+    padding: 5px 0;
+    text-align: center;
+    font-weight: 600;
+    color: rgb(50, 50, 50);
+    background-color: rgb(230, 230, 230);
+    
+    
+  }
+  
+  .day {
+    padding: 5px 0;
+    text-align: center;
+    font-weight: 600;
+    color: rgb(50, 50, 50);
+    background-color: rgb(250, 250, 250);
+    
+  }
+  
+  .day-of-week {
+    padding: 1px 0;
+    font-size: 0.8em;
+    color: rgb(100, 100, 100);
+    background-color: rgb(255, 255, 255);
+  }
+  
+  .today {
+    padding: 2px 0;
+    color: rgb(15, 120, 110);
+    font-weight: 700;
+    font-size: 1.1em;
+    border: 1px solid rgb(15, 120, 110);
+    /* border-radius: 30%; */
+  }
+  .closest-month-day {
+    font-weight: 400;
+    color: rgb(100, 100, 100);
+    background-color: rgb(230, 230, 230);
+  }
