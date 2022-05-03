@@ -1,17 +1,17 @@
-import React, { Component } from "react";
-import "../CalendarS.css";
+import React from "react";
+import "../../components/Calendar.css";
 
 const daysOfWeek = ["Пн", "Вт", "Ср", "Чт", "Пт", "Сб", "Вс"];
 
-class CalendarMonth extends Component {
-  render() {
-    console.log(this.props);
+const CalendarMonth= (props)=>{
+  
+    //console.log(props);
     const { titleMonth,
       currentData,
       currentYear,
       lastDaysPrevMonth,
       howmatchDaysCurMonth,
-      numbersDaysOfCurrentMonth } = this.props
+      numbersDaysOfCurrentMonth } = props
 
     return (
       // рендерит блок с названием месяца и днями недели
@@ -38,7 +38,7 @@ class CalendarMonth extends Component {
         </div>
       </div>
     );
-  }
+  
 }
 
 export default CalendarMonth;
