@@ -1,13 +1,25 @@
-import React from 'react';
+import React from "react";
 import "./App.css";
-import Calendar from './components/Calendar'
+import CalendarWrapper from './components/bigCalendar/CalendarWrapper'
 
-const App = () => {
-  return (
-    <>
-      <Calendar />
-    </>
-  );
-};
+class App extends React.Component {
+    render() {
+    
+    return (
+      <div className="App container">
+        <CalendarWrapper/>
+      </div>
+    );
+  }
+}
 
 export default App;
+
+// const App = () => {
+//   return (
+//     <>
+//       <Header />
+
+//     </>
+//   );
+// };
