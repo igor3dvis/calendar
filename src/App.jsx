@@ -1,25 +1,18 @@
-import React from "react";
+import React from 'react';
 import "./App.css";
-import CalendarWrapper from './components/bigCalendar/CalendarWrapper'
+import CalendarWrapper from './components/big-calendar/CalendarWrapper';
 
-class App extends React.Component {
-    render() {
-    
-    return (
-      <div className="App container">
-        <CalendarWrapper/>
-      </div>
-    );
-  }
-}
+const App = (props) => {
+  return (
+    <>
+      <CalendarWrapper state={props.state}
+        howmatchDays={props.howmatchDays}
+        funcNumbersDaysOfCurrentMonth={props.funcNumbersDaysOfCurrentMonth}
+        getTitleMonth={props.getTitleMonth}
+        lastDaysPrevMonth={props.lastDaysPrevMonth} 
+        changeCurrMonth={props.changeCurrMonth}/>
+    </>
+  );
+};
 
 export default App;
-
-// const App = () => {
-//   return (
-//     <>
-//       <Header />
-
-//     </>
-//   );
-// };

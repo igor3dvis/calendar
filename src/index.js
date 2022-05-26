@@ -1,13 +1,21 @@
-import React from "react";
-import * as ReactDOM from "react-dom/client";
-import "./index.css";
-import App from "./App";
+import React from 'react';
+import {createRoot} from 'react-dom/client';
+import './index.css';
+import App from './App';
+import { store } from "../src/data/store";
 
-const container = document.getElementById("root");
+const container = document.getElementById('root');
+const root = createRoot(container);
 
-const root = ReactDOM.createRoot(container);
-root.render(
-  <React.StrictMode>
-    <App tab="home" />
-  </React.StrictMode>
-);
+const reRender = (state) => {
+root.render(<App state={state}
+    howmatchDays={store.howmatchDays.bind(store)}
+    funcNumbersDaysOfCurrentMonth={store.funcNumbersDaysOfCurrentMonth.bind(store)}
+    getTitleMonth={store.getTitleMonth.bind(store)}
+    lastDaysPrevMonth={store.lastDaysPrevMonth.bind(store)} 
+    changeCurrMonth={store.changeCurrMonth.bind(store)}/>);
+}
+
+reRender(store.getState());
+
+store.subscribe(reRender);
